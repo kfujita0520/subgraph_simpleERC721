@@ -1,0 +1,21 @@
+{
+  "name": "nftTokens",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node http://127.0.0.1:8020 admin/nftTokens",
+    "create-local": "graph create --node http://localhost:8020/ admin/nftTokens",
+    "remove-local": "graph remove --node http://localhost:8020/ admin/nftTokens",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 admin/nftTokens",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@amxx/graphprotocol-utils": "^1.1.0",
+    "@graphprotocol/graph-cli": "0.71.1",
+    "@graphprotocol/graph-ts": "0.32.0"
+  },
+  "devDependencies": {
+    "matchstick-as": "0.5.0"
+  }
+}
